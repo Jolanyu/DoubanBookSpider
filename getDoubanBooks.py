@@ -90,12 +90,12 @@ def getBookUrl(html):
         urlList.append(item['href'])
     return urlList
 
-#
+#https://book.douban.com/tag/%E5%B0%8F%E8%AF%B4
 if __name__ == "__main__":
-    startPage = 20
-    endPage = 30
+    startPage = 6
+    endPage = 10
     for i in range(startPage, endPage+1):
-        url = "https://book.douban.com/tag/%E6%96%87%E5%AD%A6?start=" + \
+        url = "https://book.douban.com/tag/%E5%B0%8F%E8%AF%B4?start=" + \
             str(i*20)+"&type=S"
         html = getHtml(url)
         urlList = getBookUrl(html)
