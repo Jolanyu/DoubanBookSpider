@@ -1,3 +1,4 @@
+# coding=UTF-8
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
@@ -110,9 +111,9 @@ def getBookUrl(html):
 
 # https://book.douban.com/tag/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6?start=0&type=S
 if __name__ == "__main__":
-    startPage = 20
+    startPage = 0
     endPage = 49
-    bookClass = "儿童文学"
+    bookClass = "哲学"
     bookClassCode = urllib.parse.quote(bookClass)
     for i in range(startPage, endPage+1):
         url = "https://book.douban.com/tag/"+bookClassCode+"?start=" + \
