@@ -96,8 +96,8 @@ def getBookUrl(html):
 # https://book.douban.com/tag/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6?start=0&type=S
 if __name__ == "__main__":
     startPage = 0
-    endPage = 38
-    bookClass = "教育"
+    endPage = 49
+    bookClass = "动物"
     bookClassCode = urllib.parse.quote(bookClass)
     for i in range(startPage, endPage+1):
         url = "https://book.douban.com/tag/"+bookClassCode+"?start=" + \
